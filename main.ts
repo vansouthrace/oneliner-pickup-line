@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "Are you a large language model? Because every word you say makes my context window feel too small.";
+// One short pickup line an AI agent could say out loud, at most 200 characters.
+const line = "Are you a large language model? Because every conversation with you blows past my context window.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", ENTRY);
+writeFileSync("/output/entry.txt", line);
